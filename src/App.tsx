@@ -1,4 +1,7 @@
 import './sass/_index.scss';
+// Picnic CSS - lightweight CSS library to help styling the interface
+// https://picnicss.com/documentation
+import "../node_modules/picnic/picnic.min.css";
 
 import React from 'react';
 

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const StatoscopeWebpackPlugin = require('@statoscope/webpack-plugin').default;
 const { DefinePlugin } = require('webpack');
 const sourceFolder = './src/';
 const defaultPort = 1111;
@@ -70,7 +71,15 @@ module.exports = () => {
             publicPath: '/'
         },
 
-        plugins: [htmlPlugin, new DefinePlugin({ 'process.env': JSON.stringify(environmentVariables) })],
+        plugins: [
+            htmlPlugin,
+            new DefinePlugin({ 'process.env': JSON.stringify(environmentVariables) }),
+            new StatoscopeWebpackPlugin({
+                saveReportTo: 'reports/report-[hash].html',
+                saveStatsTo: 'reports/stats-[hash].json',
+                watchMode: false
+            })
+        ],
 
         // Set up the directory
         // from which webpack will take the static content.

@@ -15,6 +15,7 @@ React sample application purpose is to help bootstrap new React projects in a si
 - `DotEnv` to load project environment variables;
 - `Webpack` to bundle the application and serve it in development mode;
 - `PicniCSS` lightweight CSS framework for UI styling;
+- `Statoscope` to generate reports about the application;
 
 ## Installation and application bootstrap
 

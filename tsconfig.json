@@ -50,9 +50,6 @@
       "@/pages/*": [
         "src/pages/*"
       ],
-      "@/react-query/*": [
-        "src/react-query/*"
-      ],
       "@/routes/*": [
         "src/routes/*"
       ],

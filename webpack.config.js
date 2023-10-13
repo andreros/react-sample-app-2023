@@ -56,7 +56,6 @@ module.exports = () => {
                 '@/hooks': path.resolve(__dirname, 'src/hooks/'),
                 '@/models': path.resolve(__dirname, 'src/models/'),
                 '@/pages': path.resolve(__dirname, 'src/pages/'),
-                '@/react-query': path.resolve(__dirname, 'src/react-query/'),
                 '@/routes': path.resolve(__dirname, 'src/routes/'),
                 '@/services': path.resolve(__dirname, 'src/services/'),
                 '@/tools': path.resolve(__dirname, 'src/tools/')

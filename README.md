@@ -24,6 +24,11 @@ Please, bear in mind that this application is always evolving and new tools may 
 -   `Log4Brains` to manage Architectural Decision Record (ADR) and generate static HTML knowledge base;
 -   `Statoscope` to generate reports about the application;
 
+## Application Testing tools
+
+-   `Jest` javascript testing framework;
+-   `React Testing Library` testing framework for working with React components;
+
 ## Installation and application bootstrap
 
 From the project root folder, please execute the following commands in a terminal window:

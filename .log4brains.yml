@@ -1,0 +1,5 @@
+project:
+  name: react-sample-app
+  tz: Europe/Lisbon
+  adrFolder: /docs/adr
+  packages: []

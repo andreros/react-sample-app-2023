@@ -29,11 +29,41 @@ Please, bear in mind that this application is always evolving and new tools may 
 -   `Jest` javascript testing framework;
 -   `React Testing Library` testing framework for working with React components;
 
-## Installation and application bootstrap
+## Application scripts
+
+### Installation and application bootstrap
 
 From the project root folder, please execute the following commands in a terminal window:
 
-```
+```bash
+# install the application dependencies
 npm i
+
+# start the application in development mode
 npm start
+# or
+npm run dev
+
+# build a version of the application for distribution
+npm run build
+```
+
+### Testing
+
+```bash
+# run the application unit tests
+npm run test
+
+# run the application unit tests and present a code coverage report
+npm run test:coverage
+```
+
+### Architecture Decisions Record (ADR)
+
+```bash
+# add a new entry to the application ADR
+npm run adr:add
+
+# serve the application ADR for consulting in a browser
+npm run adr:serve
 ```

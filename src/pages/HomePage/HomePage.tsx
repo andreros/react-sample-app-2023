@@ -1,6 +1,7 @@
-import { Counter } from '@/components/Counter/Counter';
 import clsx from 'clsx';
 import React from 'react';
+
+import { Counter } from '@/components/Counter/Counter';
 
 export interface IHomePageProps {
 	className?: string;

@@ -4,18 +4,13 @@
     "es2021": true
   },
   "extends": "plugin:react/recommended",
-  "overrides": [
-  ],
+  "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "simple-import-sort",
-    "react",
-    "@typescript-eslint"
-  ],
+  "plugins": ["simple-import-sort", "react", "@typescript-eslint"],
   "rules": {
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error"

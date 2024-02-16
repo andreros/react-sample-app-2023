@@ -4,41 +4,41 @@ import React from 'react';
 import { Counter } from '@/components/Counter/Counter';
 
 describe('Counter', () => {
-    it('Component should render correctly', () => {
-        const { container } = render(<Counter />);
+	it('Component should render correctly', () => {
+		const { container } = render(<Counter />);
 
-        // select component root element by class name
-        const rootElement = container.getElementsByClassName('rsa-counter');
+		// select component root element by class name
+		const rootElement = container.getElementsByClassName('rsa-counter');
 
-        //assert the expected result
-        expect(rootElement.length).toBe(1);
-    });
+		//assert the expected result
+		expect(rootElement.length).toBe(1);
+	});
 
-    it('Counter value should decrement when decrement button is clicked', () => {
-        render(<Counter />);
+	it('Counter value should decrement when decrement button is clicked', () => {
+		render(<Counter />);
 
-        //select the elements you want to interact with
-        const counter = screen.getByTestId('counter');
-        const decrementBtn = screen.getByTestId('decrement');
+		//select the elements you want to interact with
+		const counter = screen.getByTestId('counter');
+		const decrementBtn = screen.getByTestId('decrement');
 
-        //interact with those elements
-        fireEvent.click(decrementBtn);
+		//interact with those elements
+		fireEvent.click(decrementBtn);
 
-        //assert the expected result
-        expect(counter).toHaveTextContent('-1');
-    });
+		//assert the expected result
+		expect(counter).toHaveTextContent('-1');
+	});
 
-    it('Counter value should increment when increment button is clicked', () => {
-        render(<Counter />);
+	it('Counter value should increment when increment button is clicked', () => {
+		render(<Counter />);
 
-        //select the elements you want to interact with
-        const counter = screen.getByTestId('counter');
-        const incrementBtn = screen.getByTestId('increment');
+		//select the elements you want to interact with
+		const counter = screen.getByTestId('counter');
+		const incrementBtn = screen.getByTestId('increment');
 
-        //interact with those elements
-        fireEvent.click(incrementBtn);
+		//interact with those elements
+		fireEvent.click(incrementBtn);
 
-        //assert the expected result
-        expect(counter).toHaveTextContent('1');
-    });
+		//assert the expected result
+		expect(counter).toHaveTextContent('1');
+	});
 });

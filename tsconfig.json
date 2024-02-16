@@ -35,30 +35,14 @@
     "baseUrl": "./",
     /* Specify the base directory to resolve non-relative module names. */
     "paths": {
-      "@/assets/*": [
-        "public/assets/*"
-      ],
-      "@/components/*": [
-        "src/components/*"
-      ],
-      "@/hooks/*": [
-        "src/hooks/*"
-      ],
-      "@/models/*": [
-        "src/models/*"
-      ],
-      "@/pages/*": [
-        "src/pages/*"
-      ],
-      "@/routes/*": [
-        "src/routes/*"
-      ],
-      "@/services/*": [
-        "src/services/*"
-      ],
-      "@/tools/*": [
-        "src/tools/*"
-      ]
+      "@/assets/*": ["public/assets/*"],
+      "@/components/*": ["src/components/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/models/*": ["src/models/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/routes/*": ["src/routes/*"],
+      "@/services/*": ["src/services/*"],
+      "@/tools/*": ["src/tools/*"]
     },
     /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
@@ -145,8 +129,5 @@
     "skipLibCheck": true
     /* Skip type checking all .d.ts files. */
   },
-  "exclude": [
-    "dist",
-    "node_modules"
-  ]
+  "exclude": ["dist", "node_modules"]
 }

@@ -4,5 +4,5 @@
  * @return {string | undefined} The environment variable, if the variable key exists. `undefined` otherwise.
  */
 export const getEnvironmentVariables = (envVariable: string): string | undefined => {
-    return process.env[envVariable];
+	return process.env[envVariable];
 };

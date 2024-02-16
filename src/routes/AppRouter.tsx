@@ -5,19 +5,19 @@ import HomePage from '@/pages/HomePage/HomePage';
 import LoadingPage from '@/pages/LoadingPage/LoadingPage';
 
 export const AppRouter: React.FC = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route
-                    index
-                    path="*"
-                    element={
-                        <Suspense fallback={<LoadingPage />}>
-                            <HomePage />
-                        </Suspense>
-                    }
-                />
-            </Routes>
-        </BrowserRouter>
-    );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route
+					index
+					path="*"
+					element={
+						<Suspense fallback={<LoadingPage />}>
+							<HomePage />
+						</Suspense>
+					}
+				/>
+			</Routes>
+		</BrowserRouter>
+	);
 };

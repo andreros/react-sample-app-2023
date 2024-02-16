@@ -1,3 +1,4 @@
+.eslintignore
 .gitignore
 .prettierignore
 yarn.lock

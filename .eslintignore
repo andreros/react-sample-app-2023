@@ -1,0 +1,9 @@
+# root folders
+
+/build
+/dist
+/node_modules
+
+# other rules
+
+**/*.d.ts

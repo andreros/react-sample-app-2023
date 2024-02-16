@@ -19,11 +19,16 @@ Please, bear in mind that this application is always evolving and new tools may 
 
 ## Application Support and Tools
 
--   `Prettier` for code formatting;
 -   `Webpack` to bundle the application and serve it in development mode;
 -   `Log4Brains` to manage Architectural Decision Record (ADR) and generate static HTML knowledge base;
 -   `Statoscope` to generate reports about the application;
 -   `husky` to automate git hooks;
+
+## Application Code Quality
+
+-   `ESLint` for code linting;
+-   `Prettier` for code formatting;
+-   `StyleLint` for style linting;
 
 ## Application Testing tools
 
@@ -47,6 +52,28 @@ npm run dev
 
 # build a version of the application for distribution
 npm run build
+```
+
+### Code Quality
+
+```bash
+# run prettier automatic file formatter
+npm run prettier-format-all
+
+# run ESLint
+npm run lint
+
+# run ESLint and fix all automatically fixable problems
+npm run lint:fix
+
+# run StyleLint
+npm run lint:css
+
+# run StyleLint and fix all automatically fixable problems
+npm run lint:css:fix
+
+# run all the necessary commands before a code commit
+npm run pre-commit
 ```
 
 ### Testing

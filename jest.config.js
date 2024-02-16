@@ -20,7 +20,6 @@ module.exports = {
 	modulePaths: ['<rootDir>'],
 	testEnvironment: 'jsdom',
 	// code coverage
-	// collectCoverage: true, // always generate coverage
-	collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
+	collectCoverageFrom: ['src/components/**/*.{js,jsx,ts,tsx}'],
 	coverageDirectory: 'coverage'
 };

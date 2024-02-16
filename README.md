@@ -17,12 +17,13 @@ Please, bear in mind that this application is always evolving and new tools may 
 -   `DotEnv` to load project environment variables;
 -   `PicniCSS` lightweight CSS framework for UI styling;
 
-## Application Support tools
+## Application Support and Tools
 
 -   `Prettier` for code formatting;
 -   `Webpack` to bundle the application and serve it in development mode;
 -   `Log4Brains` to manage Architectural Decision Record (ADR) and generate static HTML knowledge base;
 -   `Statoscope` to generate reports about the application;
+-   `husky` to automate git hooks;
 
 ## Application Testing tools
 
@@ -53,6 +54,9 @@ npm run build
 ```bash
 # run the application unit tests
 npm run test
+
+# run the application unit tests in file watch mode
+npm run test:watch
 
 # run the application unit tests and present a code coverage report
 npm run test:coverage

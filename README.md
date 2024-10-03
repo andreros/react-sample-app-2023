@@ -1,6 +1,6 @@
-# react-sample-app
+# react-sample-app-2023
 
-React Sample Application
+React Sample Application built with 2023 technologies. THIS APPLICATION WILL NO LONGER BE MAINTAINED and is only here for references purposes.
 
 ## Application purpose
 
